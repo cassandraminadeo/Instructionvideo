@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* Styles for the entire body of the page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #272727; /* gray background */
+            color: #ffffff; /* white text */
+        }
+
+        /* Styles for the container holding the contact form */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Puts it in the middle of the page */
+        }
+
+        /* Styles for the contact form box */
+        .contact-box {     
+            padding: 40px; /* Surrounding area of the box (white space) */
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styles for the h2 element inside the contact form */
+        .contact-box h2 {     
+            text-align: center;
+            margin-bottom: 15px; /* Space between "Contact Us" and the filler text */
+        }
+
+        /* Styles for the form groups */
+        .form-group {
+            margin-bottom: 15px; /* Space between the 3 insert boxes */
+        }
+
+        /* Styles for labels */
+        label {
+            display: block;
+            margin-bottom: 5px; /* Space between text and box to insert text in */
+        }
+
+        /* Styles for input fields and textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; /* size of text box horizontally */
+            padding: 8px;
+            border: 1px solid #ccc; /* Border of text box */
+            border-radius: 5px; /* Curves of edges */
+            background-color: #272727; /* gray background */
+            color: #ffffff; /* white text */
+            outline: none; /* Removes the default outline */
+        }
+
+        /* Styles for input and textarea when focused */
+        input:focus,
+        textarea:focus {
+            border-color: #822804; /* Change the border color on focus */
+            outline-color: transparent; /* Removes the default outline color */
+        }       
+
+        /* Styles for textarea */
+        textarea {
+            resize: none;
+            outline: none; /* Removes the default outline */
+        }
+
+        /* Styles for the submit button */
+        button {
+    display: block; /* Ensures the button takes full width */
+    margin: 0 auto; /* Centers the button horizontally */
+    padding: 10px 70px; /* Padding of the button (top/bottom, left/right) */
+    border: none;
+    background-color: #000000;
+    color: #ffffff; /* text color */
+    border-radius: 5px; /* Curves of edges */
+    cursor: pointer; /* Gives a subtle change when hovered */
+    transition: background-color 0.3s ease; /* How fast that change happens */
+}
+
+        /* Styles for the submit button when hovered */
+        button:hover {
+            background-color: #822804;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for centering the contact form -->
+    <div class="container">
+        <!-- Contact form box -->
+        <div class="contact-box">
+            <!-- Contact form title -->
+            <h2>Contact Me</h2>
+            <!-- Contact form -->
+            <form action="#" method="POST">
+                <!-- Form group for Name -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <!-- Form group for Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Form group for Message -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <!-- Submit button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <form
+  action="https://formspree.io/f/mwkgldde"
+  method="POST" >
+
+</body>
+</html>
